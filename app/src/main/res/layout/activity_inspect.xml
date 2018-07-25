@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.choucheng.dongzhibot.view.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mTitle="开始巡检"
+        app:mRightImage="@mipmap/add_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:text="请输入设备编号"
+        android:textSize="16sp"/>
+
+    <com.gcssloop.widget.RCRelativeLayout
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:stroke_color="@color/grey"
+        app:stroke_width="2dp"
+        app:round_corner="8dp">
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="16dp"
+            />
+    </com.gcssloop.widget.RCRelativeLayout>
+
+    <com.gcssloop.widget.RCRelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:round_corner="30dp">
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_blue"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="确定"
+            />
+    </com.gcssloop.widget.RCRelativeLayout>
+</LinearLayout>

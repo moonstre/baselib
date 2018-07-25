@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_bg"
+    android:orientation="vertical"
+    >
+
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="POS业务系统主页"
+      android:textSize="18sp"
+      android:textColor="@color/white"
+      />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"
+          >
+
+        <ImageView
+            android:id="@+id/promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/promotion" />
+
+          <ImageView
+              android:id="@+id/business_order"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:src="@mipmap/order"
+              />
+
+        <TextView
+            android:id="@+id/install_order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/circle_red"
+           android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="@color/white"/>
+      </RelativeLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@mipmap/main_horzontal_line"/>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="28dp"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"
+          >
+        <ImageView
+            android:id="@+id/inspection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/inspection"
+            />
+
+        <ImageView
+            android:id="@+id/maintain_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/maintain_order"
+            />
+
+        <TextView
+            android:id="@+id/protect_order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_red"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="@color/white"/>
+      </RelativeLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@mipmap/main_horzontal_line"/>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="28dp"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"
+          >
+        <ImageView
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_info"
+            />
+
+        <ImageView
+            android:id="@+id/sys_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/sys_update"
+            />
+      </RelativeLayout>
+    </LinearLayout>
+
+    <View
+      android:id="@+id/center"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/center"
+        android:src="@mipmap/main_vertival_line"
+        android:layout_marginRight="8dp"
+        />
+  </RelativeLayout>
+
+
+  <LinearLayout
+      android:id="@+id/history"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="48dp"
+      >
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史任务"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:src="@mipmap/main_right_arrow"
+        />
+  </LinearLayout>
+
+
+
+
+
+</LinearLayout>
