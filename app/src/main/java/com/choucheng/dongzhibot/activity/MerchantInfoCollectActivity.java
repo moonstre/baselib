@@ -376,6 +376,7 @@ public class MerchantInfoCollectActivity extends BaseActivity {
                                 tempStr+=uploadData.get(i).path;
                             }
                             headUrl=tempStr;
+
                         }
                     }
 

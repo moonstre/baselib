@@ -20,6 +20,30 @@ android {
     }
 }
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'circleloadinglibrary'
+
+    publishedGroupId = 'com.mrzk.loadingview'
+    libraryName = 'circleloadinglibrary'
+    artifact = 'circleloadinglibrary'
+
+    libraryDescription = 'a circle loading for android'
+
+    siteUrl = 'https://github.com/zhangke3016/CircleLoading'
+    gitUrl = 'https://github.com/zhangke3016/CircleLoading.git'
+
+    libraryVersion = '1.1.0'
+
+    developerId = 'mrzk'
+    developerName = 'zhangke'
+    developerEmail = '609975727@qq.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
